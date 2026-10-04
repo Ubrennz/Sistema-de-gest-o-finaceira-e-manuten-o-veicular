@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Financeiro — Frota&Caixa</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <p class="brand">Frota<span>&</span>Caixa</p>
+    <p class="brand-sub">Gestão financeira e manutenção veicular</p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Painel</a></li>
+        <li><a href="financeiro.html" aria-current="page">Financeiro</a></li>
+        <li><a href="veiculos.html">Veículos</a></li>
+        <li><a href="manutencoes.html">Manutenções</a></li>
+        <li><a href="relatorios.html">Relatórios</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-foot">Oficina Central · 4 veículos</div>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <h1>Financeiro</h1>
+      <button class="btn" type="button">Novo lançamento</button>
+    </header>
+
+    <section class="panel" aria-labelledby="filtros-h">
+      <div class="panel-head"><h2 id="filtros-h">Filtrar lançamentos</h2></div>
+      <div class="panel-body">
+        <form class="filters">
+          <div class="field">
+            <label for="f-periodo">Período</label>
+            <select id="f-periodo">
+              <option>Setembro de 2026</option>
+              <option>Agosto de 2026</option>
+              <option>Julho de 2026</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-veiculo">Veículo</label>
+            <select id="f-veiculo">
+              <option>Todos</option>
+              <option>Fiat Toro · ABC-1D23</option>
+              <option>VW Saveiro · XYZ-4E56</option>
+              <option>Renault Kwid · GHI-9K12</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-tipo">Tipo</label>
+            <select id="f-tipo">
+              <option>Todos</option>
+              <option>Receita</option>
+              <option>Despesa</option>
+            </select>
+          </div>
+          <button class="btn ghost" type="button">Aplicar</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <div class="panel" style="grid-column: 1 / -1;">
+        <div class="panel-head"><h2>Lançamentos do período</h2><span class="hint">14 registros</span></div>
+        <div class="panel-body" style="padding:0;">
+          <table>
+            <thead>
+              <tr>
+                <th>Data</th><th>Descrição</th><th>Veículo</th><th>Categoria</th><th class="num">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>02/09</td><td>Corrida — Cliente Aurora</td><td>Fiat Toro</td><td>Receita de frete</td><td class="num amount-in">+ R$ 1.350</td></tr>
+              <tr><td>04/09</td><td>Abastecimento</td><td>VW Saveiro</td><td>Combustível</td><td class="num amount-out">- R$ 340</td></tr>
+              <tr><td>06/09</td><td>Troca de óleo e filtro</td><td>Fiat Toro</td><td>Manutenção</td><td class="num amount-out">- R$ 410</td></tr>
+              <tr><td>09/09</td><td>Corrida — Cliente Horizonte</td><td>Renault Kwid</td><td>Receita de frete</td><td class="num amount-in">+ R$ 980</td></tr>
+              <tr><td>12/09</td><td>Seguro da frota</td><td>Todos</td><td>Seguro</td><td class="num amount-out">- R$ 780</td></tr>
+              <tr><td>15/09</td><td>Pneus dianteiros</td><td>VW Saveiro</td><td>Manutenção</td><td class="num amount-out">- R$ 890</td></tr>
+              <tr><td>18/09</td><td>Corrida — Cliente Aurora</td><td>Fiat Toro</td><td>Receita de frete</td><td class="num amount-in">+ R$ 1.620</td></tr>
+              <tr><td>21/09</td><td>Abastecimento</td><td>Renault Kwid</td><td>Combustível</td><td class="num amount-out">- R$ 210</td></tr>
+              <tr><td>25/09</td><td>Corrida — Cliente Vetor</td><td>VW Saveiro</td><td>Receita de frete</td><td class="num amount-in">+ R$ 2.040</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2>Totais do período</h2></div>
+        <div class="panel-body">
+          <dl>
+            <div class="stat positive"><dt>Total de receitas</dt><dd class="num">R$ 14.900</dd></div>
+          </dl>
+          <br>
+          <dl>
+            <div class="stat negative"><dt>Total de despesas</dt><dd class="num">R$ 6.660</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2>Despesas por categoria</h2></div>
+        <div class="panel-body">
+          <ul class="barlist">
+            <li><span class="label">Manutenção</span><span class="track"><span class="fill negative" style="width:62%"></span></span><span class="value">R$ 1.300</span></li>
+            <li><span class="label">Combustível</span><span class="track"><span class="fill negative" style="width:26%"></span></span><span class="value">R$ 550</span></li>
+            <li><span class="label">Seguro</span><span class="track"><span class="fill negative" style="width:37%"></span></span><span class="value">R$ 780</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-foot">Frota&amp;Caixa — protótipo de interface, dados fictícios para fins de demonstração.</footer>
+  </main>
+</div>
+</body>
+</html>

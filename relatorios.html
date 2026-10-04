@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relatórios — Frota&Caixa</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <p class="brand">Frota<span>&</span>Caixa</p>
+    <p class="brand-sub">Gestão financeira e manutenção veicular</p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Painel</a></li>
+        <li><a href="financeiro.html">Financeiro</a></li>
+        <li><a href="veiculos.html">Veículos</a></li>
+        <li><a href="manutencoes.html">Manutenções</a></li>
+        <li><a href="relatorios.html" aria-current="page">Relatórios</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-foot">Oficina Central · 4 veículos</div>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <h1>Relatórios</h1>
+      <p class="period">Ano de 2026</p>
+    </header>
+
+    <section class="panel" aria-labelledby="cat-h">
+      <div class="panel-head"><h2 id="cat-h">Despesas por categoria</h2></div>
+      <div class="panel-body">
+        <ul class="barlist">
+          <li><span class="label">Manutenção</span><span class="track"><span class="fill negative" style="width:48%"></span></span><span class="value">R$ 4.360</span></li>
+          <li><span class="label">Combustível</span><span class="track"><span class="fill negative" style="width:33%"></span></span><span class="value">R$ 3.010</span></li>
+          <li><span class="label">Seguro</span><span class="track"><span class="fill negative" style="width:12%"></span></span><span class="value">R$ 1.080</span></li>
+          <li><span class="label">Licenciamento</span><span class="track"><span class="fill negative" style="width:7%"></span></span><span class="value">R$ 640</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="veic-h">
+      <div class="panel-head"><h2 id="veic-h">Custo por veículo</h2></div>
+      <div class="panel-body">
+        <ul class="barlist">
+          <li><span class="label">VW Saveiro</span><span class="track"><span class="fill negative" style="width:58%"></span></span><span class="value">R$ 3.320</span></li>
+          <li><span class="label">Fiat Toro</span><span class="track"><span class="fill negative" style="width:42%"></span></span><span class="value">R$ 2.410</span></li>
+          <li><span class="label">Fiat Strada</span><span class="track"><span class="fill negative" style="width:24%"></span></span><span class="value">R$ 1.390</span></li>
+          <li><span class="label">Hyundai HB20</span><span class="track"><span class="fill negative" style="width:19%"></span></span><span class="value">R$ 1.080</span></li>
+          <li><span class="label">Renault Kwid</span><span class="track"><span class="fill negative" style="width:14%"></span></span><span class="value">R$ 810</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="mes-h">
+      <div class="panel-head"><h2 id="mes-h">Saldo mensal — receitas x despesas</h2></div>
+      <div class="panel-body">
+        <table>
+          <thead>
+            <tr><th>Mês</th><th class="num">Receitas</th><th class="num">Despesas</th><th class="num">Saldo</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Junho</td><td class="num amount-in">R$ 12.400</td><td class="num amount-out">R$ 5.900</td><td class="num amount-in">R$ 6.500</td></tr>
+            <tr><td>Julho</td><td class="num amount-in">R$ 13.150</td><td class="num amount-out">R$ 7.240</td><td class="num amount-in">R$ 5.910</td></tr>
+            <tr><td>Agosto</td><td class="num amount-in">R$ 13.980</td><td class="num amount-out">R$ 6.100</td><td class="num amount-in">R$ 7.880</td></tr>
+            <tr><td>Setembro</td><td class="num amount-in">R$ 14.900</td><td class="num amount-out">R$ 6.660</td><td class="num amount-in">R$ 8.240</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="page-foot">Frota&amp;Caixa — protótipo de interface, dados fictícios para fins de demonstração.</footer>
+  </main>
+</div>
+</body>
+</html>

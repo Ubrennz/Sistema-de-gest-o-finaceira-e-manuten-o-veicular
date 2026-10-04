@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manutenções — Frota&Caixa</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <p class="brand">Frota<span>&</span>Caixa</p>
+    <p class="brand-sub">Gestão financeira e manutenção veicular</p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Painel</a></li>
+        <li><a href="financeiro.html">Financeiro</a></li>
+        <li><a href="veiculos.html">Veículos</a></li>
+        <li><a href="manutencoes.html" aria-current="page">Manutenções</a></li>
+        <li><a href="relatorios.html">Relatórios</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-foot">Oficina Central · 4 veículos</div>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <h1>Manutenções</h1>
+      <button class="btn" type="button">Agendar manutenção</button>
+    </header>
+
+    <section class="panel" aria-labelledby="agenda-h">
+      <div class="panel-head">
+        <h2 id="agenda-h">Próximas manutenções</h2>
+        <span class="hint">Ordenadas por urgência</span>
+      </div>
+      <div class="panel-body">
+        <ol class="list-plain">
+          <li>
+            <strong>Fiat Toro · ABC-1D23</strong> — troca de óleo e filtro.
+            <div class="hint">Vencida há 480 km · Oficina Central</div>
+          </li>
+          <li>
+            <strong>VW Saveiro · XYZ-4E56</strong> — revisão do sistema de freios.
+            <div class="hint">Agendada para 02/10/2026 · Oficina Central</div>
+          </li>
+          <li>
+            <strong>Hyundai HB20 · JLM-7P89</strong> — alinhamento e balanceamento.
+            <div class="hint">Prevista para 08/10/2026 · Pneus Norte</div>
+          </li>
+          <li>
+            <strong>Renault Kwid · GHI-9K12</strong> — rodízio de pneus.
+            <div class="hint">Em 3.200 km · sem data definida</div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="hist-h">
+      <div class="panel-head">
+        <h2 id="hist-h">Histórico de manutenções</h2>
+        <span class="hint">18 registros no ano</span>
+      </div>
+      <div class="panel-body" style="padding:0;">
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th><th>Veículo</th><th>Serviço</th><th class="num">Km</th><th class="num">Custo</th><th>Oficina</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>06/09/2026</td><td>Fiat Toro</td><td>Troca de óleo e filtro</td><td class="num">47.640</td><td class="num amount-out">R$ 410</td><td>Oficina Central</td></tr>
+            <tr><td>15/09/2026</td><td>VW Saveiro</td><td>Pneus dianteiros</td><td class="num">81.200</td><td class="num amount-out">R$ 890</td><td>Pneus Norte</td></tr>
+            <tr><td>22/08/2026</td><td>Renault Kwid</td><td>Revisão dos 20.000 km</td><td class="num">19.980</td><td class="num amount-out">R$ 560</td><td>Oficina Central</td></tr>
+            <tr><td>10/08/2026</td><td>Fiat Strada</td><td>Reparo no sistema elétrico</td><td class="num">103.400</td><td class="num amount-out">R$ 720</td><td>Elétrica Sul</td></tr>
+            <tr><td>29/07/2026</td><td>Hyundai HB20</td><td>Troca de correia dentada</td><td class="num">60.100</td><td class="num amount-out">R$ 980</td><td>Oficina Central</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="page-foot">Frota&amp;Caixa — protótipo de interface, dados fictícios para fins de demonstração.</footer>
+  </main>
+</div>
+</body>
+</html>

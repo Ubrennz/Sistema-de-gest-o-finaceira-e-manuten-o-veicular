@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veículos — Frota&Caixa</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <p class="brand">Frota<span>&</span>Caixa</p>
+    <p class="brand-sub">Gestão financeira e manutenção veicular</p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Painel</a></li>
+        <li><a href="financeiro.html">Financeiro</a></li>
+        <li><a href="veiculos.html" aria-current="page">Veículos</a></li>
+        <li><a href="manutencoes.html">Manutenções</a></li>
+        <li><a href="relatorios.html">Relatórios</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-foot">Oficina Central · 4 veículos</div>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <h1>Veículos</h1>
+      <button class="btn" type="button">Cadastrar veículo</button>
+    </header>
+
+    <section aria-labelledby="frota-h">
+      <h2 id="frota-h" style="font-size:18px;">Frota cadastrada</h2>
+      <div class="grid-3">
+        <article class="vehicle-card">
+          <span class="plate">ABC-1D23</span>
+          <h3>Fiat Toro</h3>
+          <span class="status ativo">Ativo</span>
+          <dl>
+            <div><dt>Ano</dt><dd>2022</dd></div>
+            <div><dt>Km atual</dt><dd>48.120 km</dd></div>
+            <div><dt>Combustível</dt><dd>Diesel</dd></div>
+            <div><dt>Responsável</dt><dd>Brenno</dd></div>
+          </dl>
+        </article>
+
+        <article class="vehicle-card">
+          <span class="plate">XYZ-4E56</span>
+          <h3>VW Saveiro</h3>
+          <span class="status manutencao">Em manutenção</span>
+          <dl>
+            <div><dt>Ano</dt><dd>2020</dd></div>
+            <div><dt>Km atual</dt><dd>81.930 km</dd></div>
+            <div><dt>Combustível</dt><dd>Flex</dd></div>
+            <div><dt>Responsável</dt><dd>Luiz</dd></div>
+          </dl>
+        </article>
+
+        <article class="vehicle-card">
+          <span class="plate">GHI-9K12</span>
+          <h3>Renault Kwid</h3>
+          <span class="status ativo">Ativo</span>
+          <dl>
+            <div><dt>Ano</dt><dd>2023</dd></div>
+            <div><dt>Km atual</dt><dd>19.400 km</dd></div>
+            <div><dt>Combustível</dt><dd>Flex</dd></div>
+            <div><dt>Responsável</dt><dd>Brenno</dd></div>
+          </dl>
+        </article>
+
+        <article class="vehicle-card">
+          <span class="plate">JLM-7P89</span>
+          <h3>Hyundai HB20</h3>
+          <span class="status ativo">Ativo</span>
+          <dl>
+            <div><dt>Ano</dt><dd>2021</dd></div>
+            <div><dt>Km atual</dt><dd>62.050 km</dd></div>
+            <div><dt>Combustível</dt><dd>Flex</dd></div>
+            <div><dt>Responsável</dt><dd>Luiz</dd></div>
+          </dl>
+        </article>
+
+        <article class="vehicle-card">
+          <span class="plate">NOP-2Q34</span>
+          <h3>Fiat Strada</h3>
+          <span class="status parado">Parado</span>
+          <dl>
+            <div><dt>Ano</dt><dd>2019</dd></div>
+            <div><dt>Km atual</dt><dd>103.760 km</dd></div>
+            <div><dt>Combustível</dt><dd>Flex</dd></div>
+            <div><dt>Responsável</dt><dd>—</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="ficha-h" style="margin-top:26px;">
+      <div class="panel-head">
+        <h2 id="ficha-h">Ficha técnica — Fiat Toro · ABC-1D23</h2>
+        <span class="hint">Detalhe do veículo selecionado</span>
+      </div>
+      <div class="panel-body grid-2">
+        <div>
+          <table>
+            <tbody>
+              <tr><th>Modelo</th><td>Fiat Toro Freedom 1.8</td></tr>
+              <tr><th>Ano/fabricação</th><td>2022</td></tr>
+              <tr><th>Placa</th><td>ABC-1D23</td></tr>
+              <tr><th>Chassi</th><td>9BD*********63021</td></tr>
+              <tr><th>Km atual</th><td class="num">48.120 km</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <table>
+            <tbody>
+              <tr><th>Última manutenção</th><td>06/09/2026 — troca de óleo</td></tr>
+              <tr><th>Próxima revisão</th><td>Vencida há 480 km</td></tr>
+              <tr><th>Custo acumulado (ano)</th><td class="num amount-out">R$ 3.140</td></tr>
+              <tr><th>Receita gerada (ano)</th><td class="num amount-in">R$ 21.480</td></tr>
+              <tr><th>Status</th><td><span class="status ativo">Ativo</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-foot">Frota&amp;Caixa — protótipo de interface, dados fictícios para fins de demonstração.</footer>
+  </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel — Frota&Caixa</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <p class="brand">Frota<span>&</span>Caixa</p>
+    <p class="brand-sub">Gestão financeira e manutenção veicular</p>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Painel</a></li>
+        <li><a href="financeiro.html">Financeiro</a></li>
+        <li><a href="veiculos.html">Veículos</a></li>
+        <li><a href="manutencoes.html">Manutenções</a></li>
+        <li><a href="relatorios.html">Relatórios</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-foot">Oficina Central · 4 veículos</div>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <h1>Painel geral</h1>
+      <p class="period">Setembro de 2026</p>
+    </header>
+
+    <section class="panel" aria-labelledby="resumo-h">
+      <div class="panel-head">
+        <h2 id="resumo-h">Resumo do mês</h2>
+        <span class="hint">Atualizado hoje</span>
+      </div>
+      <div class="panel-body">
+        <dl class="grid-4">
+          <div class="stat positive">
+            <dt>Saldo atual</dt>
+            <dd class="num">R$ 8.240</dd>
+          </div>
+          <div class="stat positive">
+            <dt>Receitas no mês</dt>
+            <dd class="num">R$ 14.900</dd>
+          </div>
+          <div class="stat negative">
+            <dt>Despesas no mês</dt>
+            <dd class="num">R$ 6.660</dd>
+          </div>
+          <div class="stat">
+            <dt>Veículos ativos</dt>
+            <dd class="num">4 de 5</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <section class="panel" aria-labelledby="alertas-h">
+        <div class="panel-head">
+          <h2 id="alertas-h">Alertas de manutenção</h2>
+          <a href="manutencoes.html">Ver todas</a>
+        </div>
+        <div class="panel-body">
+          <div class="alert">
+            <strong>Fiat Toro · ABC-1D23</strong> — troca de óleo vencida há 480 km.
+          </div>
+          <div class="alert">
+            <strong>VW Saveiro · XYZ-4E56</strong> — revisão dos freios agendada para 02/10.
+          </div>
+          <ul class="list-plain">
+            <li>Renault Kwid · GHI-9K12 — pneus dentro do prazo, próxima revisão em 3.200 km.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="lancamentos-h">
+        <div class="panel-head">
+          <h2 id="lancamentos-h">Próximos lançamentos</h2>
+          <a href="financeiro.html">Ver financeiro</a>
+        </div>
+        <div class="panel-body">
+          <ul class="list-plain">
+            <li>28/09 — Parcela do seguro da frota <span class="amount-out" style="float:right">- R$ 780</span></li>
+            <li>30/09 — Corrida contratada, Cliente Horizonte <span class="amount-in" style="float:right">+ R$ 2.100</span></li>
+            <li>03/10 — Licenciamento Saveiro <span class="amount-out" style="float:right">- R$ 220</span></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <footer class="page-foot">Frota&amp;Caixa — protótipo de interface, dados fictícios para fins de demonstração.</footer>
+  </main>
+</div>
+</body>
+</html>
